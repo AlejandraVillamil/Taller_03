@@ -3,16 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Taller 03</title>
 </head>
 <body>
+    <h1>
+       Bootcamp Fullsatck - Taller 03
+       <br>
+       Cantante Favorito
+    </h1>
+    <section class="container">
+        <p class="subtitle">Funciones botón por botón</p>
+        <p class="description">Funciones genérica, escucha y flecha</p>
+        <button onclick="pedirNombre()" id="btnNombre">Tu nombre</button>
+        <button id="btnApodo">Tu apodo</button>
+        <button id="btnSigno">Tu signo</button>
+        <button onclick="pedirEdad()">Tu edad</button>
+    </section>
+ <section class="container">
+    <p class="subtitle">Prompts agrupados en una sóla función</p>
+    <p class="description">Ejecutar todos los propmt con una sola función</p>
+    <button onclick="askInfo()">Usa sola pregunta</button>
+    <br>
+    <div id="onscreen"></div>
+ </section>
 
-    
-    <button onclick="pedirNombre()" id="btnNombre">Tu nombre</button>
-    <button id="btnApodo">Tu apodo</button>
-    <button id="btnSigno">Tu signo</button>
-    <button onclick="pedirEdad()">Tu edad</button>
-    <button onclick="askInfo()">Todo</button>
+
     <script src="scripts/script.js"></script>
 </body>
 </html>

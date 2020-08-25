@@ -37,8 +37,10 @@ function askInfo(){
    var zodiac=prompt('Escribe tu signo zodiacal')
    var age=prompt('Escribe tu Edad')  
    var message =`Mi nombre es ${name}, pero mi apodo es "${nick}" tengo ${age} años y mi signo zodiacal es ${zodiac}`
-    document.write(message)
-
+    alert(message)
+    //Escribir satos en pantalla
+    var div_onscreen=document.getElementById('onscreen')
+    div_onscreen.innerText = `${name}, gracias por darnos tu información`
 }
 
 function print(){
@@ -48,6 +50,8 @@ function print(){
     document.write(mensaje)
     console.log(mensaje)
     alert(mensaje)
+
+
 }
 
 
