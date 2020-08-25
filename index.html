@@ -3,30 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Taller 03</title>
 </head>
 <body>
     <h1>
        Bootcamp Fullsatck - Taller 03
        <br>
-       Cantante Favorito
+       Artista
     </h1>
     <section class="container">
-        <p class="subtitle">Funciones botón por botón</p>
-        <p class="description">Funciones genérica, escucha y flecha</p>
-        <button onclick="pedirNombre()" id="btnNombre">Tu nombre</button>
-        <button id="btnApodo">Tu apodo</button>
-        <button id="btnSigno">Tu signo</button>
-        <button onclick="pedirEdad()">Tu edad</button>
-    </section>
- <section class="container">
-    <p class="subtitle">Prompts agrupados en una sóla función</p>
-    <p class="description">Ejecutar todos los propmt con una sola función</p>
-    <button onclick="askInfo()">Usa sola pregunta</button>
-    <br>
-    <div id="onscreen"></div>
- </section>
+        
+        <button class="photo"  onclick="askInfo()"><img class="photo" src="src/images/at.jpg"></button>
+        <br>
+        <p class="text"><b>Nombre:</b>
+            <div id="name_onscreen"></div><button onclick="pedirNombre()" id="btnNombre" >Editar</button>            
+        </p> 
+        
+        <p class="text"><b>Apodo:</b> 
+        <div id="nick_onscreen"></div><button id="btnApodo">Editar</button>        
+        </p>    
+
+        <p class="text"><b>Signo zodiacal:</b> 
+        <div id="zodiac_onscreen"></div><button id="btnSigno">Editar</button>        
+        </p>
+
+        <p class="text"><b>Edad:</b> 
+        <div id="age_onscreen"></div><button onclick="pedirEdad()">Editar</button>        
+        </p>
+
+     </section>
 
 
     <script src="scripts/script.js"></script>

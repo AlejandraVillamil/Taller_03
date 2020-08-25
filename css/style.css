@@ -4,5 +4,17 @@
 }
 body{
     display: flex;
+    flex-direction: column;
+    align-content: center;
+    
+}
+.photo{
+    background: url(src/images/at.jpg);
+    width: 15vw;
+    border-radius: 15rem;
+}
+
+.text{
+
     
 }
