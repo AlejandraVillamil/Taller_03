@@ -4,7 +4,7 @@ var edad
 var signo
 //Creación de función generica
 function pedirNombre(){
-    nombre=prompt('Escribe tu nombre')
+    nombre=prompt('Nombre')
     //Diligenciar nombre
     var name_onscreen=document.getElementById('name_onscreen')
     name_onscreen.innerText = nombre
@@ -13,7 +13,7 @@ function pedirNombre(){
 //Creación de función con evento de escucha 1
 var btnApodo = document.querySelector('#btnApodo')
 btnApodo.addEventListener('click',()=>{
-    apodo=prompt('Escribe tu apodo')
+    apodo=prompt('Apodo')
         //Diligenciar apodo
         var nick_onscreen=document.getElementById('nick_onscreen')
         nick_onscreen.innerText = apodo
@@ -21,7 +21,7 @@ btnApodo.addEventListener('click',()=>{
 
 //Creación de función con evento de escucha 2
 function pedirSigno(){
-    signo=prompt('Escribe tu signo zodiacal')
+    signo=prompt('Signo zodiacal')
        //Diligenciar Signo
    var zodiac_onscreen=document.getElementById('zodiac_onscreen')
    zodiac_onscreen.innerText = signo
@@ -31,7 +31,7 @@ btnSigno.addEventListener('click',pedirSigno)
 
 //función tipo flecha
 var pedirEdad =()=>{
-    edad=prompt('Escribe tu Edad') 
+    edad=prompt('Edad') 
     //Diligenciar Edad
    var age_onscreen=document.getElementById('age_onscreen')
    age_onscreen.innerText = edad
@@ -39,27 +39,27 @@ var pedirEdad =()=>{
 }
 //función agupada
 function askInfo(){
-   var name=prompt('Escribe tu nombre')
+   var name=prompt('Nombre')
    //Diligenciar nombre
    var name_onscreen=document.getElementById('name_onscreen')
    name_onscreen.innerText = name
 
-   var nick=prompt('Escribe tu apodo')
+   var nick=prompt('Apodo')
    //Diligenciar apodo
    var nick_onscreen=document.getElementById('nick_onscreen')
    nick_onscreen.innerText = nick
 
-   var zodiac=prompt('Escribe tu signo zodiacal')
+   var zodiac=prompt('Signo zodiacal')
    //Diligenciar Signo
    var zodiac_onscreen=document.getElementById('zodiac_onscreen')
    zodiac_onscreen.innerText = zodiac
 
-   var age=prompt('Escribe tu Edad')  
+   var age=prompt('Edad')  
    //Diligenciar Edad
    var age_onscreen=document.getElementById('age_onscreen')
    age_onscreen.innerText = age
    
-   var message =`Mi nombre es ${name}, pero mi apodo es "${nick}" tengo ${age} años y mi signo zodiacal es ${zodiac}`
+   var message =` Fue registrado ${name}, de apodo "${nick}" de ${age} años y signo zodiacal ${zodiac}`
    
    alert(message)
 
