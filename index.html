@@ -7,34 +7,54 @@
     <title>Taller 03</title>
 </head>
 <body>
-    <h1>
-       Bootcamp Fullsatck - Taller 03
-       <br>
-       Artista
-    </h1>
+    <header>   
+         <h1 class="title">
+              Información artista
+     </h1>
+     <h5 class="detail"> Taller 03 - Alejandra Villamil</h5>
+    </header>
+
     <section class="container">
         
-        <button class="photo"  onclick="askInfo()"><img class="photo" src="src/images/at.jpg"></button>
-        <br>
-        <p class="text"><b>Nombre:</b>
-            <div id="name_onscreen"></div><button onclick="pedirNombre()" id="btnNombre" >Editar</button>            
-        </p> 
+        <button class="button_photo"  onclick="askInfo()"><img class="photo" src="src/images/at.jpg"></button>
+        <div class="card">
+            <!-- Nombre -->
+            <p class="text">
+                <div id="name_onscreen" class="data"></div>          
+                <h5 class="label">Nombre
+                <button onclick="pedirNombre()" id="btnNombre" class="buttom_edit" ><img class="edit" src=" src/images/edit.png"></button></h5>
+            </p> 
+
+             <!-- Apodo -->          
+            <p class="text">
+                <div id="nick_onscreen" class="data"></div>
+                <h5 class="label"> Apodo 
+                <button id="btnApodo" class="buttom_edit" ><img class="edit" src=" src/images/edit.png"></button></h5>       
+            </p>    
+
+              <!-- Signo -->    
+            <p class="text">
+            <div id="zodiac_onscreen" class="data"></div> 
+            <h5 class="label"> Signo zodiacal 
+            <button id="btnSigno" class="buttom_edit" ><img class="edit" src=" src/images/edit.png"></button></h5>     
+            </p>
+
+            <!-- Edad -->
+            <p class="text">
+            <div id="age_onscreen" class="data"></div>
+            <h5 class="label"> Edad 
+            <button onclick="pedirEdad()"  class="buttom_edit" ><img class="edit" src=" src/images/edit.png"></button></h5>  
+      
+            </p>
+
+        </div>
         
-        <p class="text"><b>Apodo:</b> 
-        <div id="nick_onscreen"></div><button id="btnApodo">Editar</button>        
-        </p>    
-
-        <p class="text"><b>Signo zodiacal:</b> 
-        <div id="zodiac_onscreen"></div><button id="btnSigno">Editar</button>        
-        </p>
-
-        <p class="text"><b>Edad:</b> 
-        <div id="age_onscreen"></div><button onclick="pedirEdad()">Editar</button>        
-        </p>
 
      </section>
 
 
     <script src="scripts/script.js"></script>
+
+
 </body>
 </html>

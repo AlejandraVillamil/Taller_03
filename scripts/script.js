@@ -1,8 +1,3 @@
-/*var boton = document.getElementById('btn')
-console.log("Este es un boton",boton) //concatenar texto con coma
-console.log(`Este es un boton${boton}`)//concatenar texto con templates
-*/
-
 var nombre
 var apodo
 var edad
